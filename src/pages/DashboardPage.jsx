@@ -1,11 +1,7 @@
-import React from 'react';
 import StackGuardLogo from '../components/shared/StackGuardLogo';
 import Button from '../components/ui/Button';
 
-/**
- * Page 3: Dashboard Page (no Tailwind)
- * Final page, shown only after auth and configuration.
- */
+
 const DashboardPage = ({ user, onLogout }) => {
   const greeting = `Hello, ${user?.firstName || 'user'}!`;
   const subGreeting = 'How are you doing today?';
@@ -42,7 +38,6 @@ const DashboardPage = ({ user, onLogout }) => {
 
 export default DashboardPage;
 
-/* ---------- Inline Style Objects ---------- */
 const styles = {
   container: {
     minHeight: '100vh',
@@ -87,7 +82,7 @@ const styles = {
   dashboardBox: {
     marginTop: '32px',
     padding: '32px',
-    backgroundColor: '#f3f4f6', // gray-100
+    backgroundColor: '#f3f4f6',
     borderRadius: '0.75rem',
   },
   sectionTitle: {

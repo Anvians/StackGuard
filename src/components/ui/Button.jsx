@@ -1,8 +1,6 @@
 import React from 'react';
 
-/**
- * A styled button component with variants (no Tailwind).
- */
+
 const Button = ({
   type = 'button',
   variant = 'primary',
@@ -46,7 +44,6 @@ const Button = ({
 
 export default Button;
 
-/* ---------- Inline Style Objects ---------- */
 const styles = {
   base: {
     width: '100%',

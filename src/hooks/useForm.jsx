@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-/**
- * A simple hook to manage form state and validation.
- */
+
 const useForm = (initialState, validate) => {
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});

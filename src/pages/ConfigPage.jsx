@@ -2,16 +2,12 @@ import React, { useState } from 'react';
 import StackGuardLogo from '../components/shared/StackGuardLogo';
 import Button from '../components/ui/Button';
 
-/**
- * Page 2: Configuration Page (no Tailwind)
- * Shown after login, before dashboard.
- */
+
 const ConfigPage = ({ onConfigSuccess, user }) => {
   const [key, setKey] = useState('');
   const [error, setError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // --- Validation ---
   const validateKey = (value) => {
     if (!value) return 'Configuration key is required.';
     if (value.length < 100)
@@ -21,7 +17,6 @@ const ConfigPage = ({ onConfigSuccess, user }) => {
     return null;
   };
 
-  // --- Submit Handler ---
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationError = validateKey(key);
@@ -37,7 +32,7 @@ const ConfigPage = ({ onConfigSuccess, user }) => {
     }
   };
 
-  // --- Render ---
+ 
   return (
     <div style={styles.container}>
       <div style={styles.card}>
@@ -89,7 +84,7 @@ const ConfigPage = ({ onConfigSuccess, user }) => {
                   color:
                     key.length < 100 || key.length > 1000
                       ? '#dc2626'
-                      : '#16a34a', // red or green
+                      : '#16a34a', 
                 }}
               >
                 {key.length}/1000
@@ -108,7 +103,6 @@ const ConfigPage = ({ onConfigSuccess, user }) => {
 
 export default ConfigPage;
 
-/* ---------- Inline Styles ---------- */
 const styles = {
   container: {
     minHeight: '100vh',

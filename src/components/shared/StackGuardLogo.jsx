@@ -1,8 +1,6 @@
 import React from 'react';
 
-/**
- * A simple SVG recreation of the StackGuard logo (no Tailwind).
- */
+
 const StackGuardLogo = ({ size = 40 }) => (
   <svg
     style={{ ...styles.svg, width: size, height: size }}
@@ -23,7 +21,7 @@ const StackGuardLogo = ({ size = 40 }) => (
 
 export default StackGuardLogo;
 
-/* ---------- Inline Style Objects ---------- */
+/* Inline Style Objects */
 const styles = {
   svg: {
     display: 'inline-block',

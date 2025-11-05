@@ -1,8 +1,5 @@
 import React from 'react';
 
-/**
- * The two-column layout for the Sign-In/Sign-Up pages (no Tailwind).
- */
 const AuthLayout = ({ children }) => (
   <>
     <style>{styles.mediaQuery}</style>
@@ -24,7 +21,7 @@ const AuthLayout = ({ children }) => (
 
 export default AuthLayout;
 
-/* ---------- Inline Style Objects ---------- */
+/* Inline Style Objects*/
 const styles = {
   container: {
     minHeight: '100vh',

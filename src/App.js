@@ -3,11 +3,7 @@ import AuthPage from './pages/AuthPage';
 import ConfigPage from './pages/ConfigPage';
 import DashboardPage from './pages/DashboardPage';
 
-/**
- * Root App Component (no Tailwind)
- * Manages authentication flow:
- * Auth → Config → Dashboard
- */
+
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isConfigured, setIsConfigured] = useState(false);
@@ -43,7 +39,6 @@ const App = () => {
 
 export default App;
 
-/* ---------- Inline Style Objects ---------- */
 const styles = {
   appContainer: {
     fontFamily: `'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif`,
